@@ -1,4 +1,4 @@
-export interface I_vAlumno {
+export interface iAlumno {
   get nombre(): string;
   get cedula(): number;
   get nota1(): number;

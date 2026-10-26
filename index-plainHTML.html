@@ -51,20 +51,20 @@
   </section>
 
   <script type="module">
-    import Cl_cCurso from "./dist/controllers/Cl_cCurso.js";
-    import Cl_cAlumno from "./dist/controllers/Cl_cAlumno.js";
+    import cCurso from "./dist/controllers/cCurso.js";
+    import cAlumno from "./dist/controllers/cAlumno.js";
 
     // Importamos SOLO las vistas planas
-    import Cl_vCursoPlain from "./dist/views/Cl_vCursoPlain.js";
-    import Cl_vAlumnoPlain from "./dist/views/Cl_vAlumnoPlain.js";
+    import vCursoPlain from "./dist/views/vCursoPlain.js";
+    import vAlumnoPlain from "./dist/views/vAlumnoPlain.js";
 
     // 1. Instanciamos las vistas
-    const vistaCurso = new Cl_vCursoPlain();
-    const vistaAlumno = new Cl_vAlumnoPlain();
+    const vistaCurso = new vCursoPlain();
+    const vistaAlumno = new vAlumnoPlain();
 
     // 2. Inyectamos las vistas en los controladores (¡La magia ocurre aquí!)
-    const controladorAlumno = new Cl_cAlumno(vistaAlumno);
-    new Cl_cCurso(vistaCurso, controladorAlumno);
+    const controladorAlumno = new cAlumno(vistaAlumno);
+    new cCurso(vistaCurso, controladorAlumno);
   </script>
 </body>
 
